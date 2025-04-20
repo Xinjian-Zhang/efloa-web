@@ -1,0 +1,21 @@
+baseURL = '/'
+languageCode = "en"
+defaultContentLanguage = "en"
+title = "efloa"
+
+[languages]
+[languages.en]
+  languageName = "English"
+  weight = 1
+
+[languages.zh]
+  languageName = "中文"
+  weight = 2
+
+[languages.lv]
+  languageName = "Latvišu"
+  weight = 3
+
+[languages.ja]
+  languageName = "日本語"
+  weight = 4
