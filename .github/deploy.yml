@@ -2,7 +2,7 @@ name: Deploy Hugo to GitHub Pages
 
 on:
   push:
-    branches: [ main ]  # 每当你更新 main 分支就部署
+    branches: [ main ]
 
 jobs:
   deploy:
@@ -16,7 +16,7 @@ jobs:
         with:
           hugo-version: 'latest'
 
-      - name: Build site
+      - name: Build Hugo site
         run: hugo --minify
 
       - name: Deploy to GitHub Pages
