@@ -2,70 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/categories/</loc>
+    <loc>efloa.com/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/categories/"
+                href="efloa.com/zh/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="lv"
-                href="/lv/categories/"
+                href="efloa.com/lv/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="/ja/categories/"
+                href="efloa.com/ja/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/"
+                href="efloa.com/categories/"
                 />
   </url><url>
-    <loc>/</loc>
+    <loc>efloa.com/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/"
+                href="efloa.com/zh/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="lv"
-                href="/lv/"
+                href="efloa.com/lv/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="/ja/"
+                href="efloa.com/ja/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/"
+                href="efloa.com/"
                 />
   </url><url>
-    <loc>/tags/</loc>
+    <loc>efloa.com/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/tags/"
+                href="efloa.com/zh/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="lv"
-                href="/lv/tags/"
+                href="efloa.com/lv/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="/ja/tags/"
+                href="efloa.com/ja/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/"
+                href="efloa.com/tags/"
                 />
   </url>
 </urlset>

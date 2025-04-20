@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on efloa</title>
-    <link>/lv/categories/</link>
+    <link>efloa.com/lv/categories/</link>
     <description>Recent content in Categories on efloa</description>
     <generator>Hugo</generator>
     <language>lv</language>
-    <atom:link href="/lv/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="efloa.com/lv/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
