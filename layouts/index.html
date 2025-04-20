@@ -10,8 +10,13 @@
 <body>
   <div class="container">
     <header>
-      <div class="brand"><span class="highlight" style="font-weight: bold; font-size: 1.2em;">efloa</span></div>
-      <nav class="language-switch">
+      <div class="brand">
+        <span class="highlight" style="font-weight: bold; font-size: 1.2em;">efloa</span>
+      </div>
+      <button class="lang-menu-toggle" onclick="toggleLangMenu()" aria-label="Toggle language menu">
+        <span style="font-size: 0.65em;">🌍</span>
+      </button>
+      <nav class="language-switch" id="langMenu">
         {{ range .Site.Languages }}
           {{ if eq $.Site.Language.Lang .Lang }}
             <span class="active" style="color: #d16969;"><b>{{ .LanguageName }}</b></span>
@@ -25,8 +30,6 @@
           {{ end }}
         {{ end }}
       </nav>
-      
-      
     </header>
     
     <main>
@@ -93,3 +96,65 @@
   </div>
 </body>
 </html>
+
+<style>
+.lang-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #d16969;
+  font-size: 2em;
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  z-index: 1001;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  nav.language-switch {
+    display: none;
+    position: absolute;
+    top: 3.5rem;
+    right: 1.5rem;
+    background: #2d2d2d;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    padding: 1rem 1.5rem;
+    flex-direction: column;
+    min-width: 120px;
+    z-index: 1000;
+  }
+  nav.language-switch.show {
+    display: flex;
+  }
+  .lang-menu-toggle {
+    display: block;
+  }
+  nav.language-switch a, nav.language-switch span.active {
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 1.1em;
+    text-align: right;
+  }
+}
+</style>
+
+<script>
+function toggleLangMenu() {
+  var menu = document.getElementById('langMenu');
+  if (menu.classList.contains('show')) {
+    menu.classList.remove('show');
+  } else {
+    menu.classList.add('show');
+  }
+}
+// 点击页面其他地方时关闭菜单
+document.addEventListener('click', function(e) {
+  var menu = document.getElementById('langMenu');
+  var toggle = document.querySelector('.lang-menu-toggle');
+  if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+    menu.classList.remove('show');
+  }
+});
+</script>
